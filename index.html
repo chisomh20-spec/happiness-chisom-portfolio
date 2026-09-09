@@ -220,6 +220,23 @@
       0%, 100% {
         transform: translateY(0);
       }
+
+        height: 500px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  position: relative;
+  z-index: 2;
+  border-radius: 20px;
+  animation: floatCharacter 5s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .hero-video {
+    width: 240px;
+    height: 430px;
+  }
+}
       50% {
         transform: translateY(-12px);
       }
